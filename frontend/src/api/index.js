@@ -33,7 +33,7 @@ class Api {
 
   signin ({ email, password }) {
     return fetch(
-      this._url + '/api/auth/token/login/',
+      '/testsigin/',
       {
         method: 'POST',
         headers: this._headers,
@@ -60,7 +60,7 @@ class Api {
 
   signup ({ email, password, username, first_name, last_name }) {
     return fetch(
-      `/test/`,
+      `/testsignup/`,
       {
         method: 'POST',
         headers: this._headers,
